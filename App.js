@@ -10,31 +10,34 @@ import PropertyDetails2 from './src/screens/sellHome/PropertyDetails2';
 import Congratulation from './src/screens/congratulation/Congratulation';
 import MyProperties from './src/screens/myProperty/MyProperties';
 import PersonalProperty from './src/screens/buyHome/PersonalProperty';
+import ChooseBank from './src/screens/bank/ChooseBank';
+import SearchBank from './src/screens/bank/SearchBank';
 
 const App = () => {
   return (
     <View>
-      <StatusBar  barStyle="light-content" />
+      <StatusBar barStyle="light-content" />
       {/* Buy home */}
-          {/* <Search /> */}
-          {/* <ProductScreen/> */}
-          {/* <ApplyFilter/> */}
-          {/* <ProductDetails/> */}
-          {/* <PersonalProperty/> */}
-
+      {/* <Search /> */}
+      {/* <ProductScreen/> */}
+      {/* <ApplyFilter/> */}
+      {/* <ProductDetails/> */}
+      <PersonalProperty/>
 
       {/* Sell Home */}
-          <PropertyDetails1/>
-          {/* <PropertyDetails2/> */}
+      {/* <PropertyDetails1 /> */}
+      {/* <PropertyDetails2/> */}
 
       {/* Congratulation     */}
-          {/* <Congratulation/> */}
+      {/* <Congratulation/> */}
 
       {/* <MyProperties/> */}
 
+      {/* Bank */}
+      {/* <ChooseBank /> */}
+      {/* <SearchBank/> */}
     </View>
   );
 };
 
 export default App;
-

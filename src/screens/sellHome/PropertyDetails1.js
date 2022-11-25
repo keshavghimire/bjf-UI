@@ -181,17 +181,21 @@ const PropertyDetails1 = () => {
                 alignItems: 'center',
                 paddingLeft: 30,
               }}>
-              <TouchableOpacity style={{alignItems: 'center',marginRight:30}} onPress={() => captureImage('photo')}>
+              <TouchableOpacity
+                style={{alignItems: 'center', marginRight: 30}}
+                onPress={() => captureImage('photo')}>
                 <Image
                   source={require('../../assets/photo.png')}
-                  style={{height: 60, width: 60,marginBottom:10}}
+                  style={{height: 60, width: 60, marginBottom: 10}}
                 />
                 <Text style={{color: '#000'}}>Camera</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={{alignItems: 'center'}}  onPress={() => chooseFile('photo')}>
+              <TouchableOpacity
+                style={{alignItems: 'center'}}
+                onPress={() => chooseFile('photo')}>
                 <Image
                   source={require('../../assets/gallery.png')}
-                  style={{height: 65, width: 65,marginBottom:10}}
+                  style={{height: 65, width: 65, marginBottom: 10}}
                 />
                 <Text style={{color: '#000'}}>Gallery</Text>
               </TouchableOpacity>
@@ -400,9 +404,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modelView: {
+    top:-height*0.05,
     height: height * 0.25,
     backgroundColor: AppSettings.white,
-    width: width * 0.8,
+    width: width * 0.88,
     borderRadius: 12,
     shadowColor: '#000',
     shadowOffset: {

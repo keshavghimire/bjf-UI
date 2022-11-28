@@ -16,12 +16,15 @@ const SearchInput = props => {
     container: {
       marginHorizontal: 20,
       marginVertical: 25,
+      
+      
     },
     main: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
       backgroundColor: AppSettings.white,
+      height: 45,
       borderRadius: 48,
       paddingHorizontal: 18,
       borderWidth: 0.1,

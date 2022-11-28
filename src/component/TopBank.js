@@ -44,21 +44,29 @@ const TopBank = props => {
       marginRight: 20,
     },
   });
+  const dataBank = [
+    {name: 'HDFC', logo: require('../assets/hdfc.png')},
+    {name: 'ICICI', logo: require('../assets/icici.png')},
+    {name: 'SBI', logo: require('../assets/sbi.png')},
+    {name: 'AXIS', logo: require('../assets/axis.png')},
+  ];
   return (
     <View style={styles.container}>
       <Text style={styles.knowText}>Top Banks</Text>
-      <View style={{flexDirection: 'row'}}>
-        {[1, 2].map((item, index) => {
+      <View style={{flexDirection: 'row',justifyContent:"space-between",paddingHorizontal:10}}>
+        {dataBank.map((item, index) => {
           return (
             <View style={styles.bank}>
-              <Image
+              {/* <Image
                 source={{
                   uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/1024px-SBI-logo.svg.png',
                 }}
                 resizeMode="center"
                 style={styles.logo}
-              />
-              <Text style={styles.bankName}>SBI</Text>
+              /> */}
+              <Image source={item.logo}  />
+
+              <Text style={styles.bankName}>{item.name}</Text>
             </View>
           );
         })}

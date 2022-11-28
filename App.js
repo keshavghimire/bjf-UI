@@ -22,7 +22,7 @@ const App = () => {
       {/* <ProductScreen/> */}
       {/* <ApplyFilter/> */}
       {/* <ProductDetails/> */}
-      <PersonalProperty/>
+      {/* <PersonalProperty/> */}
 
       {/* Sell Home */}
       {/* <PropertyDetails1 /> */}
@@ -34,7 +34,7 @@ const App = () => {
       {/* <MyProperties/> */}
 
       {/* Bank */}
-      {/* <ChooseBank /> */}
+      <ChooseBank />
       {/* <SearchBank/> */}
     </View>
   );
